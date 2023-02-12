@@ -1,4 +1,10 @@
 --Based on the work of https://github.com/mongoq/tm1637-fpga
+--Changed the output from 16 bit hex to 8 bit decimal representation
+--Using Gowin SP core to store a LUT with the segment configuration for every 8 bit number signed and unsigned
+--Removed the tri state values on SDA on start/stop sequences and made minor adjustments to the timing
+--Changed divider to work with 3KHz
+--Removed ready flag
+
 --TODO: Add an input to control brightness
 --TODO: Try to get the SDA and SCLK transitions on a memory core and perhaps reduce LUT utilization...
 --by using shift registers?
